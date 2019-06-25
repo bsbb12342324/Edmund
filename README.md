@@ -1,0 +1,4 @@
+# Edmund
+test1
+Cognito是根据Amazon Cognito做出来的.
+Test1 是根据自己现学的前端做出来的,因为实在不会连接上Cognito的用户池服务组，所以只能在Cognito做了一个模版
