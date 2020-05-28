@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>选中变色</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <ul>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+    </ul>
+    <script>
+        var li = document.querySelectorAll('li');
+        var ul = document.querySelector('ul').addEventListener('click', function(e) {
+            for (var i = 0; i < li.length; i++) {
+                li[i].style.backgroundColor = '';
+            }
+            e.target.style.backgroundColor = '#369';
+            if (this.style.backgroundColor !== '') {
+                this.style.backgroundColor = '';
+                e.stopPropagation();
+            }
+
+        });
+    </script>
+</body>
+
+</html>
